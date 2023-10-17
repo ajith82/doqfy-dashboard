@@ -34,7 +34,7 @@
       align-items: flex-start;
       flex-direction: column;
       gap: 10px;
-      box-shadow: 2px 24px 96px 0 rgba(0,0,0,.09);
+      box-shadow: 2px 24px 96px 0 rgba(0, 0, 0, 0.09);
       border-radius: 5px;
       h4 {
         @include d-flex($jc: flex-start);
@@ -54,6 +54,29 @@
         padding: 2px 5px 2px 0;
         border-radius: 5px;
         @include d-flex($jc: flex-start);
+      }
+    }
+  }
+
+  &GraphBar {
+    @include d-flex($jc: space-between);
+    padding-top: 20px;
+  }
+
+  &Graph {
+  }
+
+  &PendingContracts {
+    background-color: $color-white-0;
+    padding: 20px;
+    border-radius: 5px;
+    .title {
+      @include d-flex($jc: flex-start);
+      gap: 20px;
+      span {
+        @include d-flex($jc: flex-start);
+        white-space: nowrap;
+        color: $color-white-1;
       }
     }
   }
