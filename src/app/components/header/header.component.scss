@@ -47,13 +47,18 @@
       gap: 20px;
       img {
         max-width: 20px;
+        cursor: pointer;
       }
     }
     &Details {
       display: flex;
       align-items: center;
       gap: 10px;
+      cursor: pointer;
     }
+  }
+  .hamburger {
+    display: none;
   }
 }
 
@@ -67,6 +72,9 @@
     }
     &Profile {
       display: none;
+    }
+    .hamburger {
+      display: block;
     }
   }
 }

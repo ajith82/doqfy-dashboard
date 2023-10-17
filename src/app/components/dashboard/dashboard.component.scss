@@ -55,6 +55,9 @@
         padding: 2px 5px 2px 0;
         border-radius: 5px;
         @include d-flex($jc: flex-start);
+        img {
+          max-width: 15px;
+        }
       }
     }
   }
@@ -84,6 +87,7 @@
         @include d-flex($jc: space-between);
         white-space: nowrap;
         color: $color-white-1;
+        cursor: pointer;
       }
     }
   }
@@ -99,6 +103,7 @@
         @include d-flex($jc: flex-start);
         white-space: nowrap;
         color: $color-white-1;
+        cursor: pointer;
       }
     }
     .circles {
@@ -121,7 +126,7 @@
             width: 1px;
             height: 100%;
             background-color: $color-white-1;
-            right: -20px;
+            right: -10px;
           }
         }
         p {
