@@ -79,5 +79,54 @@
         color: $color-white-1;
       }
     }
+    .circles {
+      @include d-flex($jc: space-between);
+      // padding-top: 50px;
+      width: 100%;
+      gap: 100px;
+      &:first-child {
+        padding-top: 20px;
+        .circlesSet {
+          // padding-top: 0;
+        }
+      }
+
+      &Set {
+        @include d-flex($jc: flex-start);
+        gap: 10px;
+        padding: 20px 0;
+        &:first-child {
+          position: relative;
+          &::after {
+            content: "";
+            position: absolute;
+            width: 1px;
+            height: 100%;
+            background-color: $color-white-1;
+            right: -50px;
+          }
+        }
+        p {
+          color: $color-white-1;
+          font-size: 15px;
+        }
+        .circle {
+        }
+        .circleDeatils {
+          h3 {
+            width: 102px;
+          }
+        }
+      }
+      &:first-child {
+        border-bottom: 1px solid $color-white-1;
+        // padding-bottom: 50px;
+      }
+    }
+    .circlesData {
+      @include d-flex($jc: space-between);
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
 }
