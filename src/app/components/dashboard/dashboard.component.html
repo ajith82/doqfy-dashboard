@@ -8,15 +8,18 @@
       </p>
     </div>
     <div class="dashboardTabs">
-        <div class="dashboardTabsStatus">
-            <h3>Contract Status</h3>
-            <span>Last Week <img src="../../../assets/images/header/arrowDown.svg" alt="arrow"></span>
-        </div>
-        <div class="dashboardTabsDetails">
-            <h4>31 <img src="../../../assets/images/header/Success.svg" alt="success"></h4>
-            <p>Drafts</p>
-            <span><img src="../../../assets/images/header/arrowDown.svg" alt="arrow"> 2.4%</span>
-        </div>
+      <div class="dashboardTabsStatus">
+        <h3>Contract Status</h3>
+        <span
+          >Last Week
+          <img src="../../../assets/images/header/arrowDown.svg" alt="arrow"
+        /></span>
+      </div>
+      <div class="dashboardTabsDetails" *ngFor="let data of tabsData">
+        <h4>{{ data.title }}<img [src]="data.titleLogo" alt="success" /></h4>
+        <p>{{ data.tabsDetails }}</p>
+        <span><img [src]="data.arrow" alt="arrow" />{{ data.num }}</span>
+      </div>
     </div>
   </div>
 </section>
