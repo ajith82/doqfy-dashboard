@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
   headerList = ['Dashboard', 'Contracts', 'Reports', 'Respository'];
+  clickedIndex: number = -1;
+
+  listClick(i:number){
+    this.clickedIndex = i;
+  }
 }

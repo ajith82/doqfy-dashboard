@@ -4,7 +4,13 @@
       <img src="../../assets/images/header/logo.png" alt="logo" />
     </div>
     <ul>
-      <li *ngFor="let list of headerList">{{ list }}</li>
+      <li
+        *ngFor="let list of headerList; let i = index"
+        [class.clicked]="i === clickedIndex"
+        (click)="listClick(i)"
+      >
+        {{ list }}
+      </li>
     </ul>
   </div>
   <div class="headerProfile">

@@ -19,6 +19,20 @@
       li {
         color: #320132;
         font-weight: 500;
+        cursor: pointer;
+      }
+      li.clicked {
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: -5px;
+          left: 45%;
+          width: 15px;
+          height: 2px;
+          background-color: #320132;
+          border-radius: 5px;
+        }
       }
     }
   }
