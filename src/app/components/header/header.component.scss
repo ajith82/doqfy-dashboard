@@ -1,9 +1,12 @@
+@import "src/variables.scss";
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
   border-bottom: 1px solid #f2f1f1;
+  background-color: $color-purple-1;
   &Logo {
     max-width: 100px;
   }
@@ -17,7 +20,7 @@
       align-items: center;
       gap: 20px;
       li {
-        color: #320132;
+        color: $color-purple-0;
         font-weight: 500;
         cursor: pointer;
       }
@@ -30,7 +33,7 @@
           left: 45%;
           width: 15px;
           height: 2px;
-          background-color: #320132;
+          background-color: $color-purple-0;
           border-radius: 5px;
         }
       }
