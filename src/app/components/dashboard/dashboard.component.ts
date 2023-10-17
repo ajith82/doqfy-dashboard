@@ -44,7 +44,6 @@ export class DashboardComponent {
       num: '2.4%',
     },
   ];
-
   public lineChartData: ChartConfiguration<'line'>['data'] = {
     labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May'],
     datasets: [
@@ -60,7 +59,7 @@ export class DashboardComponent {
     ],
   };
   public lineChartOptions: ChartOptions<'line'> = {
-    responsive: false,
+    responsive: true,
     scales: {
       x: {
         grid: {
@@ -84,7 +83,7 @@ export class DashboardComponent {
         },
         title: {
           display: true,
-          text: 'Number of Contracts',
+          text: 'Num of Contracts',
         },
       },
     },
@@ -94,9 +93,6 @@ export class DashboardComponent {
       },
     },
   };
-  
-  
-  
 
   public lineChartLegend = false;
 }

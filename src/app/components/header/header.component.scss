@@ -56,3 +56,17 @@
     }
   }
 }
+
+//media query
+@media(max-width: 768px) {
+  .header {
+    &LogoList {
+      ul {
+        display: none;
+      }
+    }
+    &Profile {
+      display: none;
+    }
+  }
+}

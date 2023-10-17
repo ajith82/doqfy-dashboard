@@ -35,16 +35,18 @@
             <img src="../../../assets/images/header/arrowDown.svg" alt="arrow"
           /></span>
         </div>
-        <canvas
-          baseChart
-          width="710"
-          height="300"
-          [type]="'line'"
-          [data]="lineChartData"
-          [options]="lineChartOptions"
-          [legend]="lineChartLegend"
-        >
-        </canvas>
+        <div class="chartContainer">
+          <canvas
+            baseChart
+            width="710"
+            height="300"
+            [type]="'line'"
+            [data]="lineChartData"
+            [options]="lineChartOptions"
+            [legend]="lineChartLegend"
+          >
+          </canvas>
+        </div>
       </div>
       <div class="dashboardPendingContracts">
         <div class="title">

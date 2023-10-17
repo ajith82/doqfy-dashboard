@@ -13,10 +13,11 @@
     }
   }
   &Tabs {
-    @include d-flex($jc: space-between);
+    @include d-flex($jc: flex-start);
     align-items: flex-start;
     padding-top: 40px;
     gap: 20px;
+    flex-wrap: wrap;
     &Status {
       @include d-flex($jc: flex-start);
       flex-direction: column;
@@ -62,6 +63,7 @@
     @include d-flex($jc: space-between);
     padding-top: 20px;
     align-items: stretch;
+    gap: 15px;
   }
 
   &Graph {
@@ -69,6 +71,11 @@
     box-shadow: 2px 24px 96px 0 rgba(0, 0, 0, 0.09);
     padding: 20px;
     border-radius: 5px;
+    .chartContainer {
+      max-width: 800px;
+      width: 100%;
+      margin: 0 auto;
+    }
     .graphTitle {
       @include d-flex($jc: flex-start);
       gap: 30px;
@@ -135,6 +142,61 @@
       @include d-flex($jc: space-between);
       flex-direction: column;
       align-items: flex-start;
+    }
+  }
+}
+
+// media query
+@media(max-width: 992px) {
+  .dashboard {
+    &GraphBar {
+      flex-direction: column;
+      gap: 20px;
+    }
+    .circles {
+      &Set {
+        &::after {
+          width: 0 !important;
+          height: 0 !important;
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 768px) {
+  .dashboard {
+    &Tabs {
+      flex-direction: column;
+      &Details {
+        width: 100%;
+        h4 {
+          justify-content: space-between;
+          width: 100%;
+        }
+      }
+    }
+    &PendingContracts {
+      .title {
+        flex-wrap: wrap;
+      }
+    }
+    &Graph {
+      .graphTitle {
+        flex-wrap: wrap;
+      }
+    }
+    .circles {
+      flex-direction: column;
+      border-bottom: none !important;
+      align-items: flex-start;
+      gap: 0;
+      &Set {
+        &::after {
+          width: 0 !important;
+          height: 0 !important;
+        }
+      }
     }
   }
 }
