@@ -63,9 +63,6 @@
     padding-top: 20px;
   }
 
-  &Graph {
-  }
-
   &PendingContracts {
     background-color: $color-white-0;
     padding: 20px;
@@ -81,14 +78,10 @@
     }
     .circles {
       @include d-flex($jc: space-between);
-      // padding-top: 50px;
       width: 100%;
       gap: 100px;
       &:first-child {
         padding-top: 20px;
-        .circlesSet {
-          // padding-top: 0;
-        }
       }
 
       &Set {
@@ -110,8 +103,6 @@
           color: $color-white-1;
           font-size: 15px;
         }
-        .circle {
-        }
         .circleDeatils {
           h3 {
             width: 102px;
@@ -120,7 +111,6 @@
       }
       &:first-child {
         border-bottom: 1px solid $color-white-1;
-        // padding-bottom: 50px;
       }
     }
     .circlesData {
