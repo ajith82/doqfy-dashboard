@@ -23,7 +23,29 @@
     </div>
 
     <div class="dashboardGraphBar">
-      <div class="dashboardGraph"></div>
+      <div class="dashboardGraph">
+        <div class="graphTitle">
+          <h3>Contracts Activity</h3>
+          <span
+            >Filter
+            <img src="../../../assets/images/header/arrowDown.svg" alt="arrow"
+          /></span>
+          <span
+            >This Year
+            <img src="../../../assets/images/header/arrowDown.svg" alt="arrow"
+          /></span>
+        </div>
+        <canvas
+          baseChart
+          width="710"
+          height="300"
+          [type]="'line'"
+          [data]="lineChartData"
+          [options]="lineChartOptions"
+          [legend]="lineChartLegend"
+        >
+        </canvas>
+      </div>
       <div class="dashboardPendingContracts">
         <div class="title">
           <h3>Pending Contracts</h3>
@@ -42,7 +64,7 @@
               <div class="circle">
                 <circle-progress
                   [percent]="72"
-                  [radius]="50"
+                  [radius]="35"
                   [outerStrokeWidth]="10"
                   [innerStrokeWidth]="0"
                   [outerStrokeColor]="'#78C000'"
@@ -59,7 +81,7 @@
               <div class="circle">
                 <circle-progress
                   [percent]="87"
-                  [radius]="50"
+                  [radius]="35"
                   [outerStrokeWidth]="10"
                   [innerStrokeWidth]="0"
                   [outerStrokeColor]="'#78C000'"
@@ -78,7 +100,7 @@
               <div class="circle">
                 <circle-progress
                   [percent]="61"
-                  [radius]="50"
+                  [radius]="35"
                   [outerStrokeWidth]="10"
                   [innerStrokeWidth]="0"
                   [outerStrokeColor]="'#78C000'"
@@ -95,7 +117,7 @@
               <div class="circle">
                 <circle-progress
                   [percent]="39"
-                  [radius]="50"
+                  [radius]="35"
                   [outerStrokeWidth]="10"
                   [innerStrokeWidth]="0"
                   [outerStrokeColor]="'#78C000'"

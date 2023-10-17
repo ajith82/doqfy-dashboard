@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { NgCircleProgressModule } from 'ng-circle-progress';
+import { NgChartsModule } from 'ng2-charts';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -27,7 +28,8 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
       "showUnits": true,
       "showBackground": false,
       "startFromZero": false,
-      "lazy": true})
+      "lazy": true}),
+      NgChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
