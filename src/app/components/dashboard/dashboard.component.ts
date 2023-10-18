@@ -52,9 +52,10 @@ export class DashboardComponent {
         label: '',
         fill: false,
         tension: 0.5,
-        borderColor: '#9a94a4',
+        borderColor: '#7e5f99',
         backgroundColor: 'transparent',
         pointRadius: 0,
+        borderWidth: 2,
       },
     ],
   };

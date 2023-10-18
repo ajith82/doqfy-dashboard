@@ -20,7 +20,7 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
       "outerStrokeGradient": true,
       "outerStrokeWidth": 10,
       "outerStrokeColor": "#9147c2",
-      "outerStrokeGradientStopColor": "#53a9ff",
+      "outerStrokeGradientStopColor": "#7e5f99",
       "innerStrokeColor": "#e7e8ea",
       "innerStrokeWidth": 10,
       "animateTitle": false,

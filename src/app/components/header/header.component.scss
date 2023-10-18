@@ -20,12 +20,15 @@
       align-items: center;
       gap: 20px;
       li {
-        color: $color-purple-0;
+        color: #856ca4;
+        // opacity: 0.7;
         font-weight: 500;
         cursor: pointer;
       }
       li.clicked {
         position: relative;
+        color: #4b3368 !important;
+        opacity: 1 !important;
         &::after {
           content: "";
           position: absolute;
@@ -55,6 +58,9 @@
       align-items: center;
       gap: 10px;
       cursor: pointer;
+      span {
+        color: #700070;
+      }
     }
   }
   .hamburger {
@@ -63,7 +69,7 @@
 }
 
 //media query
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   .header {
     &LogoList {
       ul {

@@ -22,10 +22,15 @@
       @include d-flex($jc: flex-start);
       flex-direction: column;
       gap: 20px;
+      cursor: pointer;
+      h3 {
+        color: $color-purple-0;
+      }
       span {
         @include d-flex($jc: flex-start);
         white-space: nowrap;
         gap: 20px;
+        color: $color-white-1;
       }
     }
     &Details {
@@ -46,13 +51,13 @@
         }
       }
       p {
-        color: $color-white-1;
+        // color: $color-white-1;
         font-size: 15px;
       }
       span {
-        background-color: $color-white-1;
+        background-color: #b9b7b76e;
+        padding: 3px 9px 3px 6px;
         font-size: 10px;
-        padding: 2px 5px 2px 0;
         border-radius: 5px;
         @include d-flex($jc: flex-start);
         img {
@@ -94,7 +99,7 @@
 
   &PendingContracts {
     background-color: $color-white-0;
-    padding: 20px;
+    padding: 20px 20px 0;
     border-radius: 5px;
     .title {
       @include d-flex($jc: flex-start);
@@ -130,12 +135,18 @@
           }
         }
         p {
-          color: $color-white-1;
+          color: #ae9aae;
           font-size: 15px;
+          @include d-flex($jc: flex-start);
+          cursor: pointer;
+          img {
+            max-width: 15px;
+          }
         }
         .circleDeatils {
           h3 {
             width: 102px;
+            padding-bottom: 5px;
           }
         }
       }
@@ -152,7 +163,7 @@
 }
 
 // media query
-@media(max-width: 992px) {
+@media (max-width: 992px) {
   .dashboard {
     &GraphBar {
       flex-direction: column;
@@ -169,7 +180,7 @@
   }
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   .dashboard {
     &Tabs {
       flex-direction: column;
