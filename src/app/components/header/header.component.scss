@@ -71,9 +71,26 @@
 //media query
 @media (max-width: 768px) {
   .header {
+    position: relative;
     &LogoList {
       ul {
+        // display: none;
+        position: absolute;
+        top: 83px;
+        flex-direction: column;
+        height: calc(100vh - 83px);
+        background-color: $color-white-0;
+        width: 100%;
         display: none;
+        z-index: 2;
+        right: 0;
+        transition: all 0.5s ease;
+        padding-top: 20px;
+      }
+      ul.active {
+        // right: 0;
+        display: flex;
+        transition: all 0.5s ease;
       }
     }
     &Profile {
