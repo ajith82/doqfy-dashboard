@@ -7,13 +7,26 @@
         for you!
       </p>
     </div>
+    <!-- contract status section start -->
     <div class="dashboardTabs">
       <div class="dashboardTabsStatus">
         <h3>Contract Status</h3>
-        <span
-          >Last Week
-          <img src="../../../assets/images/header/arrowDown.svg" alt="arrow"
-        /></span>
+        <div class="dropdown">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            data-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Last Week
+            <span><img src="../../../assets/images/header/arrowDown.svg" alt="arrow"
+              /></span>
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Last Month</a>
+            <a class="dropdown-item" href="#">Last Year</a>
+          </div>
+        </div>
       </div>
       <div class="dashboardTabsDetails" *ngFor="let data of tabsData">
         <h4>{{ data.title }}<img [src]="data.titleLogo" alt="success" /></h4>
@@ -22,18 +35,47 @@
       </div>
     </div>
 
+    <!-- contract status section end -->
+
     <div class="dashboardGraphBar">
+
+      <!-- Graph Start -->
+
       <div class="dashboardGraph">
         <div class="graphTitle">
           <h3>Contracts Activity</h3>
-          <span
-            >Filter
-            <img src="../../../assets/images/header/arrowDown.svg" alt="arrow"
-          /></span>
-          <span
-            >This Year
-            <img src="../../../assets/images/header/arrowDown.svg" alt="arrow"
-          /></span>
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              data-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Filter
+              <span><img src="../../../assets/images/header/arrowDown.svg" alt="arrow"
+                /></span>
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">High to Low</a>
+              <a class="dropdown-item" href="#">Low to High</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              data-toggle="dropdown"
+              aria-expanded="false"
+            >
+              This Year
+              <span><img src="../../../assets/images/header/arrowDown.svg" alt="arrow"
+                /></span>
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Last Year</a>
+              <a class="dropdown-item" href="#">2021</a>
+            </div>
+          </div>
         </div>
         <div class="chartContainer">
           <canvas
@@ -48,17 +90,44 @@
           </canvas>
         </div>
       </div>
+      <!-- Graph end -->
+
+      <!-- Pending Contracts start -->
       <div class="dashboardPendingContracts">
         <div class="title">
           <h3>Pending Contracts</h3>
-          <span
-            >September
-            <img src="../../../assets/images/header/arrowDown.svg" alt="arrow"
-          /></span>
-          <span
-            >Contract Type
-            <img src="../../../assets/images/header/arrowDown.svg" alt="arrow"
-          /></span>
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              data-toggle="dropdown"
+              aria-expanded="false"
+            >
+              September
+              <span><img src="../../../assets/images/header/arrowDown.svg" alt="arrow"
+                /></span>
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">August</a>
+              <a class="dropdown-item" href="#">July</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              data-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Contract Type
+              <span><img src="../../../assets/images/header/arrowDown.svg" alt="arrow"
+                /></span>
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Category</a>
+              <a class="dropdown-item" href="#">Contract</a>
+            </div>
+          </div>
         </div>
         <div class="circlesData">
           <div class="circles">
@@ -163,6 +232,8 @@
           </div>
         </div>
       </div>
+      <!-- Pending Contracts end -->
+
     </div>
   </div>
 </section>

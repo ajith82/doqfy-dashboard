@@ -61,6 +61,36 @@
       span {
         color: #700070;
       }
+      button {
+        color: #794d79;
+        background-color: transparent;
+        border: none;
+        @include d-flex($jc: space-between);
+        gap: 5px;
+        font-size: 14px;
+        padding: 0;
+        &:focus {
+          box-shadow: none;
+        }
+        span {
+          img {
+            filter: opacity(0.5);
+          }
+        }
+        &::after {
+          display: none;
+        }
+        .profile {
+          max-width: 20px;
+        }
+        .arrow {
+          width: 20px;
+        }
+      }
+      .dropdown-menu {
+        right: 0;
+        left: inherit;
+      }
     }
   }
   .hamburger {

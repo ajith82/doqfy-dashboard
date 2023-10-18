@@ -17,3 +17,16 @@ section {
   max-width: 1284px;
   padding: 0 24px;
 }
+h1,h2,h3,h4,h5,h6,p {
+  margin: 0;
+  font-size: inherit;
+}
+ul {
+  margin: 0;
+}
+
+@media(max-width:768px) {
+  section {
+    padding: 40px 0 0;
+  }
+}

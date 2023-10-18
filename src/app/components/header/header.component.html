@@ -20,9 +20,22 @@
       <img src="../../assets/images/header/notifyBell.svg" alt="notification" />
     </div>
     <div class="headerProfileDetails">
-      <img src="../../assets/images/header/icon.svg" alt="icon" />
-      <span>Arpit</span>
-      <img src="../../assets/images/header/arrowDown.svg" alt="arrow" />
+      <div class="dropdown">
+        <button
+          class="btn btn-secondary dropdown-toggle"
+          type="button"
+          data-toggle="dropdown"
+          aria-expanded="false"
+        >
+        <img src="../../assets/images/header/icon.svg" alt="icon" class="profile" />
+          Arpit
+          <span class="arrow"><img src="../../../assets/images/header/arrowDown.svg" alt="arrow"
+            /></span>
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Logout</a>
+        </div>
+    </div>
     </div>
   </div>
   <div class="hamburger" (click)="sideNav()">
